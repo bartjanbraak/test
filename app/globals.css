@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-ink text-zinc-100 antialiased;
+  background-image: radial-gradient(circle at top, rgba(255, 91, 46, 0.1), transparent 35%),
+    linear-gradient(to bottom, #090a0d, #0a0a0a 45%, #070708);
+}
+
+.grid-noise {
+  background-size: 20px 20px;
+}
+
+.lux-card {
+  @apply rounded-3xl border border-zinc-800/80 bg-steel/70 backdrop-blur-md;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-zinc-50 via-zinc-300 to-ember bg-clip-text text-transparent;
+}
